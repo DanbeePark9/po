@@ -73,13 +73,12 @@ h1{
 #about_me{
     font-size: 30pt;
     color:#fff;
-    margin:0;
 }
 #skill_inventory{
     font-size: 30pt;
     margin-bottom:30px;
     color:#fff;
-    margin:0;
+    border:1px solid black;
 }
 #section2{
     padding : 50px;
