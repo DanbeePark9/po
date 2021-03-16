@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박단비</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script>
+        var Dday = new Date(2018, 9, 1);    // D-day(2017년 8월 30일)를 셋팅한다.
+        var now = new Date();               // 현재(오늘) 날짜를 받아온다. 
+        var gap = now.getTime() - Dday.getTime();
+        var result = Math.floor(gap / (1000 * 60 * 60 * 24));
+        $(function(){
+            $('#day').text(result+"일");
+
+        });
+    </script>
 </head>
 <body>
-    <h1>박단비</h1>
+    <div id="banner">
+        <!-- <p id="day"></p> -->
+        <h1>박단비</h1>
+    </div>
+    
+    
+
 </body>
 </html>

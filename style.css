@@ -4,10 +4,45 @@
 .color4 {color: #0377fd;}
 .color5 {color: #75f4fe;}
 
-
-BODY{
-    background: linear-gradient(45deg, #ffef64, aquamarine);
+/* 폰트 */
+/* 리디바탕 */
+@font-face {
+    font-family: 'RIDIBatang';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/RIDIBatang.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
+/* 산돌 삼립호빵체 */
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 너만을 비춤 */
+@font-face {
+    font-family: 'Y_Spotlight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/Y_Spotlight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+BODY{
+    margin:0;
+    /* font-family: 'RIDIBatang'; */
+    /* font-family: 'SDSamliphopangche_Outline'; */
+    font-family: 'Y_Spotlight'; /*너만을비춤*/
+    background : linear-gradient(to left, #edd2d9, #9b97c6);
+}
+#banner{
+    height     : 500px;
+    margin     : 0;
+    text-align : center;
+}
+#day{
+    margin:0;
+}
+
+
 
   @keyframes typing{
     from{ width: 0; }
@@ -18,8 +53,12 @@ BODY{
   }
    
   h1{
-    width: 5ch;
-    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin:0;
+    width: 3.8ch;
+    color:white;
     overflow: hidden; 
     white-space: nowrap;
     border-right: .05em solid black;
@@ -27,3 +66,5 @@ BODY{
     cursor 1s steps(1) infinite;
     /* animation-iteration-count: infinite; */
   }
+
+  
