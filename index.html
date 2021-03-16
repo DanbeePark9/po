@@ -9,13 +9,14 @@
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script>
-        var Dday = new Date(2018, 9, 1);    // D-day(2017년 8월 30일)를 셋팅한다.
-        var now = new Date();               // 현재(오늘) 날짜를 받아온다. 
-        var gap = now.getTime() - Dday.getTime();
-        var result = Math.floor(gap / (1000 * 60 * 60 * 24));
         $(function(){
-            $('#day').text(result+"일");
-            $('#goal').fadeOut(slow);
+            var name = document.getElementById('langName');
+            
+            $('#langName').hover(function(){
+                $('#langName').addClass('text-pop-up-top');
+            }, function(){
+                $(this).removeClass('text-pop-up-top');
+            });
         });
     </script>
 </head>
@@ -24,33 +25,57 @@
         <h1>박단비</h1>
     </div>
     <div id="section1">
-        <h2 id="about_me">ABOUT ME</h2>
-        <p>어릴때부터 호기심이 많아 웹게임에서 HTML 버그를 찾고 놀던 아이가 어느새 자라 웹개발자가 되었습니다. 
-            영어, 일본어, 중국어, 프랑스어 등 다개국어를 능숙하게 구사 할 수 있을 만큼 외국어에 재능이 있었던 저는 외국어 관련 어플을 만들고자 Xcode, Android Studio 를 설치하여
-            독학으로 개발을 시작했었습니다. <br><br>
-            퀄리티 높은 어플, 웹 서비스를 만들고 싶은 욕심이 생기게 되어 JAVA 앱, 웹개발자 과정을 수료하게 되었고, 평생 교육원을 통해 컴퓨터공학 학사 과정을 진행하며 일과 학업을 병행하고 있습니다.
-        </p>    
+        <table cellspacing="0" id="section1_t">
+            <tr>
+                <td width="50%" id="pic" align="center"><img src="pic1.png" id="pic1"></td>
+                <td width="50%" id="comment">
+                    <p>어릴때부터 호기심이 많아 웹게임에서 HTML 버그를 찾고 놀던 아이가 어느새 자라 웹개발자가 되었습니다. 
+                        영어, 일본어, 중국어, 프랑스어 등 다개국어를 능숙하게 구사 할 수 있을 만큼 외국어에 재능이 있었던 저는 외국어 관련 어플을 만들고자 Xcode, Android Studio 를 설치하여
+                        독학으로 개발을 시작했었습니다. <br><br>
+                        퀄리티 높은 어플, 웹 서비스를 만들고 싶은 욕심이 생기게 되어 JAVA 앱, 웹개발자 과정을 수료하게 되었고, 평생 교육원을 통해 컴퓨터공학 학사 과정을 진행하며 일과 학업을 병행하고 있습니다.
+                    </p>    
+                </td>
+            </tr>
+        </table>
     </div>
+
     <div id="section2">
         <h2 id="skill_inventory">SKILL INVENTORY</h2>
-        <div id="skill_name">JAVA</div>
-        <div id="skill_name">Spring Framework</div>
-        <div id="skill_name">JSP</div>
-        <div id="skill_name">C</div>
-        <div id="skill_name">ANDROID</div>
-        <div id="skill_name">PHP</div>
-        <div id="skill_name">LINUX</div>
-        <div id="skill_name">AWS</div>
+        <table id="skill_name" border="0" cellspacing="0">
+            <tr>
+                <td id="langName">JAVA</td>
+                <td id="langName">Spring Framework</td> 
+                <td id="langName">JSP</td>
+                <td id="langName">C</td>
+                <td>ANDROID</td>
+                <td>PHP</td>
+                <td>LINUX</td>
+                <td>AWS</td>
+            </tr>
+            <tr>
+                <td>javaScript</td>
+                <td>React</td>
+                <td>jQuery</td>
+                <td>HTML</td>
+                <td>CSS</td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                
+            </tr>
+        </table>
     </div>
+
     <div id="section3">
         <h2>2021년에 나는</h2>
             <div class ="animated-text">
                 <div class="line">네트워크 관리사 2급을 취득</div>
                 <div class="line">컴퓨터공학 학사를 취득</div>
                 <div class="line">대형 커뮤니티 사이트를 호스팅</div>
-                <div class="line">외국어공부 어플을 런칭</div>
-                
-              </div>
+                <div class="line">외국어공부 어플을 런칭</div>    
+            </div>
         <h2>할 것이다.</h2>
     </div>
 </body>
