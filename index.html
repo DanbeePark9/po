@@ -17,12 +17,16 @@
             }, function(){
                 $(this).removeClass('text-pop-up-top');
             });
+
+            function page_load(){
+                $('#page_title').addClass('text-pop-up-top');
+            }
         });
     </script>
 </head>
-<body>
+<body onload="page_load();">
     <div id="banner">
-        <h1>박단비</h1>
+        <h1 id="page_title">박단비</h1>
     </div>
     <div id="section1">
         <table cellspacing="0" id="section1_t">
@@ -41,7 +45,7 @@
 
     <div id="section2">
         <h2 id="skill_inventory">SKILL INVENTORY</h2>
-        <table id="skill_name" border="0" cellspacing="0">
+        <table id="skill_name" border="1" cellspacing="0">
             <tr>
                 <td id="langName">JAVA</td>
                 <td id="langName">Spring Framework</td> 
@@ -69,14 +73,27 @@
     </div>
 
     <div id="section3">
-        <h2>2021년에 나는</h2>
-            <div class ="animated-text">
-                <div class="line">네트워크 관리사 2급을 취득</div>
-                <div class="line">컴퓨터공학 학사를 취득</div>
-                <div class="line">대형 커뮤니티 사이트를 호스팅</div>
-                <div class="line">외국어공부 어플을 런칭</div>    
-            </div>
-        <h2>할 것이다.</h2>
+        <table border="1" cellspacing="0">
+            <tr>
+                <td>
+                    <h2>2021년에 나는</h2>
+                </td>
+                <td>
+                    <div class ="animated-text">
+                        <div class="line">네트워크 관리사 2급을 취득</div>
+                        <div class="line">컴퓨터공학 학사를 취득</div>
+                        <div class="line">대형 커뮤니티 사이트를 호스팅</div>
+                        <div class="line">외국어공부 어플을 런칭</div>    
+                    </div>
+                </td>
+                <td>
+                    <h2>할 것이다.</h2>
+                </td>
+            </tr>
+        </table>
+        
+           
+        
     </div>
 </body>
 </html>
