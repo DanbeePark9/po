@@ -121,7 +121,7 @@ li a:hover:not(.active) {
 #pic1{
     opacity: 0.9;
 }
-/*section2 스킬 인벤토리--------------------------------------*/
+/*section2 스택--------------------------------------*/
 #section2{
     text-align : center;
     padding : 50px;
@@ -130,12 +130,17 @@ li a:hover:not(.active) {
 #stack_title{
     color:white;
     font-size: 25pt;
+    width : 70%;
+    margin:50px auto;
+    box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+    background-color:rgba(255, 255, 255, 0.1);
 }
 #stack_table{
     padding    : 10px;
     font-size  : 10pt;
     width      : 70%;
     margin     : 0 auto;
+    color      :rgb(97, 97, 97);
     background: white;
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
 }
@@ -146,10 +151,14 @@ li a:hover:not(.active) {
 #tr_hr{
   height:50px;
 }
+#tr_blank{
+  height:40px;
+}
 hr{
   margin:3px;
   border-top:0.1px solid rgba(100, 100, 100, 0.1);
 }
+
 .text-pop-up-top {
     font-size: 30pt;
 	/* -webkit-animation: text-pop-up-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both; */
