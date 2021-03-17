@@ -22,11 +22,14 @@
             });
 
             //메뉴바 클릭시 자동 스크롤 기능
-            $(".scroll").click(function(event){   
-                var targetHash=$(this).attr('href');         
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(targetHash).offset().top}, 500);
-            });    
+            $("#stackbtn").click(function(event){
+                var location = document.querySelector("#section2").offsetTop;   
+                window.scrollTo({top:location, behavior:'smooth'});
+            });
+            $("#summarybtn").click(function(event){
+                var location = document.querySelector("#section1").offsetTop;   
+                window.scrollTo({top:location, behavior:'smooth'});
+            });
         });
     </script>
 </head>
@@ -37,9 +40,9 @@
     <div id="menubar">
         <ul>
             <li><a class="active" href="#home">DANBEE PARK</a></li>
-            <li><a href="#news">SUMMARY</a></li>
+            <li><a href="#news" id="summarybtn">SUMMARY</a></li>
+            <li><a href="#stack" id="stackbtn">STACK</a></li>
             <li><a href="#about">AWARDS</a></li>
-            <li><a href="#stack" class="scroll">STACK</a></li>
             <li><a href="#about">EDUCATION</a></li>
             <li><a href="#about">DOCUMENT</a></li>
             <li><a href="#about">CONTACT</a></li>
@@ -167,9 +170,6 @@
                 </td>
             </tr>
         </table>
-        
-           
-        
     </div>
 </body>
 </html>
