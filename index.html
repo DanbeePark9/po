@@ -20,6 +20,13 @@
             }, function(){
                 $(this).removeClass('text-pop-up-top');
             });
+
+            //메뉴바 클릭시 자동 스크롤 기능
+            $(".scroll").click(function(event){   
+                var targetHash=$(this).attr('href');         
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(targetHash).offset().top}, 500);
+            });    
         });
     </script>
 </head>
@@ -32,7 +39,7 @@
             <li><a class="active" href="#home">DANBEE PARK</a></li>
             <li><a href="#news">SUMMARY</a></li>
             <li><a href="#about">AWARDS</a></li>
-            <li><a href="#contact">STACK</a></li>
+            <li><a href="#stack" class="scroll">STACK</a></li>
             <li><a href="#about">EDUCATION</a></li>
             <li><a href="#about">DOCUMENT</a></li>
             <li><a href="#about">CONTACT</a></li>
@@ -53,32 +60,75 @@
             </tr>
         </table>
     </div>
-
+    <div id="target1"></div>
     <div id="section2">
-        <h2 id="skill_inventory">SKILL INVENTORY</h2>
-        <table id="skill_name" border="1" cellspacing="0">
+        <h2 id="stack_title">BACK-END STACK</h2>
+        <table id="stack_table" border="0" cellspacing="0">
+            <tr height="50px">
+                <td width="13%">기술 구분</td>
+                <td width="10%">로고</td>
+                <td >활용 수준</td>
+                <td width="15%">평가</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
-                <td id="langName">JAVA</td>
-                <td id="langName">Spring Framework</td> 
-                <td id="langName">JSP</td>
-                <td id="langName">C</td>
-                <td>ANDROID</td>
-                <td>PHP</td>
+                <td>JAVA</td>
+                <td><img src="logo_java.png" width="40px"></td>
+                <td >
+                    JAVA GUI와 웹소캣을 활용하여 간단한 채팅 프로그램을 만들 수 있으며, Spring Framework, MVC패턴에 대해 이해하고 있습니다.
+                    Spring으로 게시판을 제작할 수 있으며 CRUD, 페이징 처리가 가능합니다. 디버그 기능을 능숙하게 다룰 수 있습니다.
+                </td>
+                <td id="td_star">★★★★☆</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
                 <td>LINUX</td>
-                <td>AWS</td>
+                <td></td>
+                <td>FILEZILLA를 활용하여 프로젝트를 호스팅 한 후 tail 명령어로 웹로그를 실시간 모니터링 할 수 있습니다.</td>
+                <td id="td_star">★☆☆☆☆</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td>Android</td>
+                <td></td>
+                <td>애뮬레이터를 활용할 수 있고 계산기 프로그래밍을 할 수 있습니다.</td>
+                <td id="td_star">★★☆☆☆</td>
             </tr>
             <tr>
-                <td>javaScript</td>
-                <td>React</td>
-                <td>jQuery</td>
-                <td>HTML</td>
-                <td>CSS</td>
+                <td></td>
                 <td></td>
                 <td></td>
                 <td></td>
             </tr>
             <tr>
-                
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
             </tr>
         </table>
     </div>
