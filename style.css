@@ -47,38 +47,75 @@
   font-weight: normal;
   font-style: normal;
 }
+/*바디--------------------------------------------------------*/
 body{
     margin:0;
     background : linear-gradient(to left, #edd2d9, #9b97c6);
 }
+/*배너--------------------------------------------------------*/
+#page_title{
+  font-size  : 20pt;
+  position   : absolute;
+  top        : 50%;
+  left       : 50%;
+  margin     : 0;
+  color      : white;
+}
 #banner{
-    height     : 500px;
+    height     : 800px;
     margin     : 0;
     text-align : center;
+    background: ;
 }
-#day{
-    margin:0;
+/*메뉴바-----------------------------------------*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
 }
-#page_title{
-    font-size  : 50pt;
-    position   : absolute;
-    top        : 50%;
-    left       : 50%;
-    margin     : 0;
-    color      : white;
+ul:after{
+  content:'';
+  display: block;
+  clear:both;
 }
-/*section1 자기소개--------------------------------------*/
+li {
+  float: left;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #111;
+}
+#menubar{
+  height:50px;
+  background-color: #966c7b;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+/*section1 SUMMARY--------------------------------------*/
 #section1{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size:15pt;
     position: relative;
     color:#fff;
-    margin-top:25%;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,0.5);
+}
+#summary{
+    padding-top:50px;
+    padding-bottom:0;
 }
 #comment{
-    padding :100px;
+    padding :50px 100px;
 }
 #section1_t{
-    background-color: rgba(0,0,0,0.5);
+    width:70%;
+    text-align:center;
+    margin:0 auto;
 }
 #pic1{
     opacity: 0.9;

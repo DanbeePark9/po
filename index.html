@@ -5,33 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>박단비</title>
     <link href="style.css" rel="stylesheet">
+    <!--Noto Sans KR 폰트-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+    </style>
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script>
         $(function(){
             var name = document.getElementById('langName');
-            
             $('#langName').hover(function(){
                 $('#langName').addClass('text-pop-up-top');
             }, function(){
                 $(this).removeClass('text-pop-up-top');
             });
-
-            function page_load(){
-                $('#page_title').addClass('text-pop-up-top');
-            }
         });
     </script>
 </head>
-<body onload="page_load();">
+<body>
     <div id="banner">
-        <h1 id="page_title">박단비</h1>
+        <!-- <h1 id="page_title">개발자 박단비 입니다</h1> -->
+    </div>
+    <div id="menubar">
+        <ul>
+            <li><a class="active" href="#home">DANBEE PARK</a></li>
+            <li><a href="#news">SUMMARY</a></li>
+            <li><a href="#about">AWARDS</a></li>
+            <li><a href="#contact">STACK</a></li>
+            <li><a href="#about">EDUCATION</a></li>
+            <li><a href="#about">DOCUMENT</a></li>
+            <li><a href="#about">CONTACT</a></li>
+          </ul>
     </div>
     <div id="section1">
-        <table cellspacing="0" id="section1_t">
+        <table border="0" cellspacing="0" id="section1_t">
+            <tr><td id="summary" ><h1>SUMMARY</h1></td></tr>
             <tr>
-                <td width="50%" id="pic" align="center"><img src="pic1.png" id="pic1"></td>
+                
                 <td width="50%" id="comment">
                     <p>어릴때부터 호기심이 많아 웹게임에서 HTML 버그를 찾고 놀던 아이가 어느새 자라 웹개발자가 되었습니다. 
                         영어, 일본어, 중국어, 프랑스어 등 다개국어를 능숙하게 구사 할 수 있을 만큼 외국어에 열정이 있었던 저는 외국어 관련 어플을 만들고자 Xcode, Android Studio 를 설치하여
