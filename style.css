@@ -51,6 +51,7 @@
 body{
     margin:0;
     background : linear-gradient(to left, #edd2d9, #9b97c6);
+    font-family: 'Noto Sans KR', sans-serif;
 }
 /*배너--------------------------------------------------------*/
 #page_title{
@@ -129,7 +130,7 @@ li a:hover:not(.active) {
 #stack_title{
     color:white;
     font-size: 25pt;
-    width : 70%;
+    width : 30%;
     margin:50px auto;
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
     background-color:rgba(255, 255, 255, 0.1);
@@ -142,6 +143,7 @@ li a:hover:not(.active) {
     color      :rgb(97, 97, 97);
     background: white;
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+    border-radius: 3px;
 }
 #td_star{
   font-weight: bold;
@@ -264,4 +266,26 @@ hr{
   100%{
     margin-top : 0;
   }
+}
+/*section4 프로젝트 경력기술----------------------------------*/
+#section4{
+  padding-top:100px;
+  width:70%;
+  /* background: #0377fd; */
+  margin:0 auto;
+}
+#section4 h1{
+  font-size:25pt;
+  color:white;
+}
+#project_table{
+  text-align:center;
+  width:100%;
+  background: white;
+  padding    : 10px;
+  font-size  : 10pt;
+  margin-bottom:150px;
+}
+#project_table tr{
+  height:40px;
 }

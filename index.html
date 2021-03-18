@@ -6,9 +6,8 @@
     <title>박단비</title>
     <link href="style.css" rel="stylesheet">
     <!--Noto Sans KR 폰트-->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
-    </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
@@ -30,6 +29,10 @@
                 var location = document.querySelector("#section1").offsetTop;   
                 window.scrollTo({top:location, behavior:'smooth'});
             });
+            $("#projectbtn").click(function(event){
+                var location = document.querySelector("#section4").offsetTop;   
+                window.scrollTo({top:location, behavior:'smooth'});
+            });
         });
     </script>
 </head>
@@ -42,6 +45,7 @@
             <li><a class="active" href="#home">DANBEE PARK</a></li>
             <li><a href="#news" id="summarybtn">SUMMARY</a></li>
             <li><a href="#stack" id="stackbtn">STACK</a></li>
+            <li><a href="#project" id="projectbtn">PROJECT</a></li>
             <li><a href="#about">AWARDS</a></li>
             <li><a href="#about">EDUCATION</a></li>
             <li><a href="#about">DOCUMENT</a></li>
@@ -76,33 +80,19 @@
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
                 <td>JAVA</td>
-                <td><img src="logo_java.png" width="40px"></td>
+                <td><img src="logo_java.png" width="30px" height="50px"></td>
                 <td >
                     JAVA GUI와 웹소캣을 활용하여 간단한 채팅 프로그램을 만들 수 있으며, Spring Framework, MVC패턴에 대해 이해하고 있습니다.
-                    Spring으로 게시판을 제작할 수 있으며 CRUD, 페이징 처리가 가능합니다. 디버그 기능을 능숙하게 다룰 수 있습니다.
+                    MVC패턴으로 게시판을 제작할 수 있으며 CRUD, 페이징 처리가 가능합니다.
                 </td>
-                <td id="td_star">★★★★☆</td>
-            </tr>
-            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
-            <tr>
-                <td>LINUX</td>
-                <td></td>
-                <td>가상머신으로 Linux 운영체제의 개발환경셋팅을 할 수 있으며 FILEZILLA를 활용하여 프로젝트를 호스팅 한 후 tail 명령어로 로그를 실시간 모니터링 할 수 있습니다.</td>
-                <td id="td_star">★☆☆☆☆</td>
-            </tr>
-            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
-            <tr>
-                <td>Android</td>
-                <td></td>
-                <td>애뮬레이터를 활용할 수 있고 계산기 프로그래밍을 할 수 있습니다.</td>
-                <td id="td_star">★★☆☆☆</td>
+                <td id="td_star">★★★★★</td>
             </tr>
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
                 <td>Oracle MySQL</td>
                 <td></td>
                 <td>게시판 프로젝트를 진행할때 자주 사용했으며 CRUD를 할 수 있습니다.</td>
-                <td id="td_star">★★★★☆</td>
+                <td id="td_star">★★★★★</td>
             </tr>
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
@@ -111,7 +101,22 @@
                 <td>비동기방식의 처리 흐름을 이해하고 있으며 댓글 CRUD, 회원가입 아이디 중복확인시에 응용하여 사용해본 경험이 있습니다.</td>
                 <td id="td_star">★★★★☆</td>
             </tr>
-            <tr id="tr_lasthr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td>Android</td>
+                <td></td>
+                <td>애뮬레이터를 활용할 수 있고 계산기 프로그래밍을 할 수 있습니다.</td>
+                <td id="td_star">★★★☆☆</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td>LINUX</td>
+                <td></td>
+                <td>가상머신으로 Linux 운영체제의 개발환경셋팅을 할 수 있으며 FILEZILLA를 활용하여 프로젝트를 호스팅 한 후 tail 명령어로 로그를 실시간 모니터링 할 수 있습니다.
+                    vi 편집기로 C언어 배치프로그램을 작성 할 수 있습니다.</td>
+                <td id="td_star">★★☆☆☆</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr id="tr_blank">
                 <td colspan="4">객관화하기 어려운 관계로, 제가 이해하고 구현할 수 있는 수준을 작성했습니다.</td>
             </tr>
@@ -130,14 +135,14 @@
             <tr>
                 <td>javaScript</td>
                 <td></td>
-                <td>javaScript 로 이벤트를 구현할 수 있으며 개발자도구의 디버그를 활용하여 값을 확인 할 수 있습니다.</td>
+                <td>javaScript 로 이벤트 함수를 구현할 수 있으며 개발자도구의 디버그를 활용하여 값을 확인 할 수 있습니다.</td>
                 <td id="td_star">★★★★★</td>
             </tr>
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
                 <td>jQuery</td>
                 <td></td>
-                <td>javaScript로 구현했던 이벤트를 jQuery로 재구현 할 수 있습니다.</td>
+                <td>javaScript로 구현했던 이벤트를 jQuery를 사용하여 간결한 문장으로 재구현 할 수 있습니다.</td>
                 <td id="td_star">★★★★☆</td>
             </tr>
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
@@ -145,7 +150,40 @@
                 <td>React</td>
                 <td></td>
                 <td>간단한 TO DO LIST를 제작해본 경험이 있습니다.</td>
-                <td id="td_star">★☆☆☆☆</td>
+                <td id="td_star">★★☆☆☆</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+        </table>
+
+        <!--TOOL STACK-->
+        <h2 id="stack_title">TOOL STACK</h2>
+        <table id="stack_table" border="0" cellspacing="0">
+            <tr height="50px">
+                <td width="13%">기술 구분</td>
+                <td width="10%">로고</td>
+                <td >활용 수준</td>
+                <td width="15%">평가</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td>Eclipse & STS</td>
+                <td></td>
+                <td>커스텀으로 자주 사용하는 단축키를 설정할 수 있으며 디버그를 능숙하게 다룰 수 있습니다. MVC패턴의 전체적인 값전달 흐름을 이해하고 있습니다. </td>
+                <td id="td_star">★★★★★</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td>Git & SVN</td>
+                <td></td>
+                <td>협업을 위해 브랜치를 만들어 push와 pull을 할 수 있습니다.</td>
+                <td id="td_star">★★★★★</td>
+            </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td id="td_star">★★★★★</td>
             </tr>
             <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
         </table>
@@ -170,6 +208,45 @@
                 </td>
             </tr>
         </table>
+    </div>
+
+    <div id="section4">
+        <h1>PROJECT</h1>
+        <br>
+        <table id="project_table" border="0" cellspacing="0">
+            <tr>
+                <td>프로젝트</td>
+                <td>소개</td>
+                <td>기간</td>
+            </tr>
+            <tr>
+                <td>LG U+ 차세대 프로젝트</td>
+                <td></td>
+                <td>2021.02~</td>
+            </tr>
+            <tr>
+                <td>단비 프랑스어</td>
+                <td>MySQL과 카페24 호스팅을 경험해 보고자 혼자 진행한 프로젝트</td>
+                <td>
+                    2020.10~
+                    2020.11
+                </td>
+            </tr>
+            <tr>
+                <td>우리동네 동아리</td>
+                <td>MVC패턴을 익히고자 진행한 프로젝트</td>
+                <td>
+                    2020.08~
+                    2020.09
+                </td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div id="section5">
+        <!-- <h1>AWARDS</h1> -->
+
     </div>
 </body>
 </html>
