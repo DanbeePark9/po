@@ -287,7 +287,8 @@ hr{
 }
 #section4{
   padding-top:100px;
-  width:70%;
+  width:70vw;
+  height:100vh;
   margin:0 auto;
   text-align:center;
 }
