@@ -1,3 +1,9 @@
+/* 
+1. 프로젝트 스크린샷
+2. 뭘 만들고자 했는지
+3. 깃허브
+*/
+
 .color1 {color: #ffd257;}
 .color2 {color: #ffef64;}
 .color3 {color: #0b159e;}
@@ -58,6 +64,13 @@ body{
     margin:0;
     background : linear-gradient(to left, #edd2d9, #9b97c6);
     font-family: 'Noto Sans KR', sans-serif;
+}
+i{
+  color:black;
+  font-size: 15pt;
+}
+#gray{
+    color:gray;
 }
 /*배너--------------------------------------------------------*/
 #page_title{
