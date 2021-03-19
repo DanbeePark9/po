@@ -94,6 +94,9 @@ li a:hover:not(.active) {
   background-color: #111;
 }
 #menubar{
+  width:100%;
+  font-size: 0.9em;
+  margin:0;
   height:50px;
   background-color: #966c7b;
   font-family: 'Noto Sans KR', sans-serif;
@@ -125,19 +128,19 @@ li a:hover:not(.active) {
 }
 
 #stack_title{
-  font-family: 'Y_Spotlight';
-    color:#fffeff;
-    font-size: 1.5em;
-    width : 30%;
-    margin:50px auto;
-    padding:10px 50px;
-    box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+    font-family: 'Y_Spotlight';
+    color      : #fffeff;
+    font-size  : 0.9em;
+    width      : 50%;
+    margin     : 50px auto;
+    padding    : 10px 50px;
+    box-shadow : 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
     background-color:rgba(255, 255, 255, 0.3);
 }
 #stack_table{
     padding    : 10px;
     font-size  : 10pt;
-    width      : 70%;
+    width      : 100%;
     margin     : 0 auto;
     color      :rgb(97, 97, 97);
     background: white;
