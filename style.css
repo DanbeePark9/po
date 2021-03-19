@@ -68,11 +68,6 @@ body{
   margin     : 0;
   color      : white;
 }
-#banner{
-    height     : 800px;
-    margin     : 0;
-    text-align : center;
-}
 /*메뉴바-----------------------------------------*/
 ul {
   list-style-type: none;
@@ -107,9 +102,9 @@ li a:hover:not(.active) {
 #summary{
     padding-bottom : 0;
 }
-#comment{
-    padding : 50px 100px;
-}
+/* #comment{ */
+    /* padding : 50px 100px; */
+/* } */
 #section1_t{
     color            : #fff;
     font-family      : 'Noto Sans KR', sans-serif;
