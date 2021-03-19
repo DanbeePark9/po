@@ -136,7 +136,7 @@ li a:hover:not(.active) {
 #stack_title{
   font-family: 'Y_Spotlight';
     color:#fffeff;
-    font-size: 25pt;
+    font-size: 1.5em;
     width : 30%;
     margin:50px auto;
     padding:10px 50px;
