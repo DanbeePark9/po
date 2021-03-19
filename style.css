@@ -104,25 +104,21 @@ li a:hover:not(.active) {
   font-family: 'Noto Sans KR', sans-serif;
 }
 /*section1 SUMMARY--------------------------------------*/
-#section1{
-    font-family : 'Noto Sans KR', sans-serif;
-    font-size   : 15pt;
-    position    : relative;
-    color       :#fff;
-    background-color : rgba(0,0,0,0.5);
-}
 #summary{
-    padding-top    : 50px;
     padding-bottom : 0;
 }
 #comment{
     padding : 50px 100px;
 }
 #section1_t{
-    width      : 70%;
-    text-align : center;
-    margin     : 0 auto;
-    font-size  : 12pt;
+    color            : #fff;
+    font-family      : 'Noto Sans KR', sans-serif;
+    background-color : rgba(0,0,0,0.5);
+    padding     : 50px 100px;
+    width       : 100%;
+    text-align  : center;
+    margin      : 0 auto;
+    font-size   : 12pt;
 }
 #pic1{
     opacity: 0.9;
