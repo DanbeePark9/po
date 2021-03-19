@@ -322,10 +322,11 @@ hr{
 }
 #contact_box{
     padding:50px;
-    width:50%;
+    width:500px;
     background-color: white;
     border-radius: 50px;
     margin:50px auto;
+    
 }
 #contact_name{
     font-family: 'GyeonggiBatang';
@@ -338,4 +339,23 @@ hr{
     letter-spacing: 0.219rem;
     color: #3f416567;
 }
+#contact_table{
+    width:50%;
+    margin:10px auto;
 
+}
+#contact_table tr{
+    height:10pt;
+}
+#detail{
+    text-align:left;
+    font-size: 10pt;
+}
+#profile_pic{
+  background-color: #edd2d9;
+  /* border:1px solid black; */
+  border-radius: 100%;
+  width: 5.625rem;
+  height: 5.625rem;
+  margin: 20px auto;
+}
