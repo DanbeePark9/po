@@ -362,10 +362,10 @@ hr{
 /*연락처----------------------------------*/
 #section5{
     width:100%;
-    /* background-color: ; */
     text-align:center;
     padding-top:300px;
     padding-bottom:300px;
+    background-color: #557da1;
 }
 #contact_box{
     padding:50px;
