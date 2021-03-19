@@ -119,9 +119,9 @@ li a:hover:not(.active) {
 #summary{
     padding-bottom : 0;
 }
-/* #comment{ */
-    /* padding : 50px 100px; */
-/* } */
+#comment{
+    padding : 50px 500px;
+}
 #section1_t{
     color            : #fff;
     font-family      : 'Noto Sans KR', sans-serif;
