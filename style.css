@@ -1,7 +1,8 @@
 /* 
 1. 프로젝트 스크린샷
 2. 뭘 만들고자 했는지
-3. 깃허브
+3. 깃허브추가
+4. 조잡하지않게 깔끔하게
 */
 
 .color1 {color: #ffd257;}
@@ -152,6 +153,7 @@ li a:hover:not(.active) {
 }
 #stack_table{
     padding    : 10px;
+    padding-bottom:30px;
     font-size  : 10pt;
     width      : 100%;
     margin     : 0 auto;
@@ -159,6 +161,28 @@ li a:hover:not(.active) {
     background: white;
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
     border-radius: 3px;
+}
+#front_stack_table{
+  padding    : 10px;
+  padding-bottom:30px;
+  font-size  : 10pt;
+  width      : 100%;
+  margin     : 50px auto;
+  color      :rgb(97, 97, 97);
+  background: white;
+  box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+  border-radius: 3px;
+}
+#tool_stack_table{
+  padding    : 10px;
+  padding-bottom:30px;
+  font-size  : 10pt;
+  width      : 100%;
+  margin     : 50px auto;
+  color      :rgb(97, 97, 97);
+  background: white;
+  box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+  border-radius: 3px;
 }
 #td_star{
     font-weight: bold;
@@ -311,6 +335,7 @@ hr{
   width:100%;
   background: white;
   padding    : 10px;
+  padding-bottom:30px;
   font-size  : 10pt;
   margin-bottom:150px;
   box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
