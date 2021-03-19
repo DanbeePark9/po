@@ -144,12 +144,17 @@ li a:hover:not(.active) {
 #stack_title{
     font-family: 'Y_Spotlight';
     color      : #fffeff;
-    font-size  : 0.9em;
+    font-size  : 2em;
     width      : 50%;
-    margin     : 50px auto;
+    margin     : 50px auto 0px;
     padding    : 10px 50px;
     box-shadow : 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
     background-color:rgba(255, 255, 255, 0.3);
+}
+#stack_intro{
+  color:white;
+  font-weight: 1000;
+  margin:50px;
 }
 #stack_table{
     padding    : 10px;
@@ -330,6 +335,16 @@ hr{
   font-size:25pt;
   color:white;
 }
+#project_title{
+  font-family: 'Y_Spotlight';
+    color      : #fffeff;
+    font-size  : 2em;
+    width      : 50%;
+    margin     : 50px auto;
+    padding    : 10px 50px;
+    box-shadow : 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
+    background-color:rgba(255, 255, 255, 0.3);
+}
 #project_table{
   text-align:center;
   width:100%;
@@ -337,7 +352,7 @@ hr{
   padding    : 10px;
   padding-bottom:30px;
   font-size  : 10pt;
-  margin-bottom:150px;
+  margin-bottom:90px;
   box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
 }
 #project_table tr{
