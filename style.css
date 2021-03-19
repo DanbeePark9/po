@@ -120,7 +120,7 @@ li a:hover:not(.active) {
     padding-bottom : 0;
 }
 #comment{
-    padding : 50px 500px;
+    padding : 50px 100px;
 }
 #section1_t{
     color            : #fff;
@@ -160,7 +160,7 @@ li a:hover:not(.active) {
     padding    : 10px;
     padding-bottom:30px;
     font-size  : 10pt;
-    width      : 100%;
+    width      : 80%;
     margin     : 0 auto;
     color      :rgb(97, 97, 97);
     background: white;
@@ -171,7 +171,7 @@ li a:hover:not(.active) {
   padding    : 10px;
   padding-bottom:30px;
   font-size  : 10pt;
-  width      : 100%;
+  width      : 80%;
   margin     : 50px auto;
   color      :rgb(97, 97, 97);
   background: white;
@@ -182,7 +182,7 @@ li a:hover:not(.active) {
   padding    : 10px;
   padding-bottom:30px;
   font-size  : 10pt;
-  width      : 100%;
+  width      : 80%;
   margin     : 50px auto;
   color      :rgb(97, 97, 97);
   background: white;
