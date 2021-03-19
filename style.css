@@ -146,15 +146,21 @@ li a:hover:not(.active) {
     border-radius: 3px;
 }
 #td_star{
-  font-weight: bold;
-  color:#8671c3;
+    font-weight: bold;
+    color:#8671c3;
 }
 #tr_hr{
-  height:50px;
+    height:50px;
+}
+#first_hr{
+    margin-bottom:25px;
+}
+#last_hr{
+    margin-top:25px;
 }
 #tr_blank{
   height    : 40px;
-  font-size : 8pt;
+  font-size : 9pt;
 }
 hr{
   margin:3px;
