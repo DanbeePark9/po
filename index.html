@@ -33,6 +33,10 @@
                 var location = document.querySelector("#section4").offsetTop;   
                 window.scrollTo({top:location, behavior:'smooth'});
             });
+            $("#contactbtn").click(function(event){
+                var location = document.querySelector("#section5").offsetTop;   
+                window.scrollTo({top:location, behavior:'smooth'});
+            });
         });
     </script>
 </head>
@@ -46,10 +50,10 @@
             <li><a href="#news" id="summarybtn">SUMMARY</a></li>
             <li><a href="#stack" id="stackbtn">STACK</a></li>
             <li><a href="#project" id="projectbtn">PROJECT</a></li>
-            <li><a href="#about">AWARDS</a></li>
-            <li><a href="#about">EDUCATION</a></li>
-            <li><a href="#about">DOCUMENT</a></li>
-            <li><a href="#about">CONTACT</a></li>
+            <!-- <li><a href="#about">AWARDS</a></li> -->
+            <!-- <li><a href="#about">EDUCATION</a></li> -->
+            <!-- <li><a href="#about">DOCUMENT</a></li> -->
+            <li><a href="#contact" id="contactbtn">CONTACT</a></li>
           </ul>
     </div>
     <div id="section1">
@@ -208,9 +212,9 @@
             </tr>
         </table>
     </div>
-
+<div id="section4_parents">
     <div id="section4">
-        <h1>PROJECT</h1>
+        <h2 id="stack_title">PROJECT</h2>
         <br>
         <table id="project_table" border="0" cellspacing="0">
             <tr>
@@ -218,11 +222,15 @@
                 <td>소개</td>
                 <td width="20%">기간</td>
             </tr>
+            <tr><td colspan="4"><hr id="first_hr"></td></tr>
             <tr>
                 <td>LG U+ 차세대 프로젝트</td>
                 <td>기존에 사용하던 소스가 노후되어 새로운 공통함수를 개발하는 작업 및 팝업을 연계하고 데이터가 잘 전달되는지에 대한 테스트 및 단위테스트, 통합테스트를 맡았습니다.</td>
-                <td>2021.02~</td>
+                <td>2021.02~
+                    2021.00
+                </td>
             </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
                 <td>단비 프랑스어</td>
                 <td>MySQL과 카페24 호스팅을 경험해 보고자 혼자 진행한 프로젝트</td>
@@ -231,6 +239,7 @@
                     2020.11
                 </td>
             </tr>
+            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
             <tr>
                 <td>우리동네 동아리</td>
                 <td>MVC패턴을 익히고자 진행한 프로젝트</td>
@@ -240,12 +249,15 @@
                 </td>
             </tr>
         </table>
-
     </div>
-
+</div>
     <div id="section5">
-        <!-- <h1>AWARDS</h1> -->
+        <div id="contact_box">
+            <p id="contact_name">PARK DANBEE</p>
+            <p id="short_intro">JAVA FULLSTACK DEVELOPER</p>
 
-    </div>
+            
+        </div>
+</div>  
 </body>
 </html>

@@ -47,6 +47,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Russo';
+  src: url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 /*바디--------------------------------------------------------*/
 body{
     margin:0;
@@ -124,16 +130,18 @@ li a:hover:not(.active) {
 /*section2 스택--------------------------------------*/
 #section2{
     text-align : center;
-    padding : 50px;
+    padding : 100px;
 }
 
 #stack_title{
-    color:white;
+  font-family: 'Y_Spotlight';
+    color:#fffeff;
     font-size: 25pt;
     width : 30%;
     margin:50px auto;
+    padding:10px 50px;
     box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
-    background-color:rgba(255, 255, 255, 0.1);
+    background-color:rgba(255, 255, 255, 0.3);
 }
 #stack_table{
     padding    : 10px;
@@ -274,11 +282,18 @@ hr{
   }
 }
 /*section4 프로젝트 경력기술----------------------------------*/
+#section4_parents{
+    background-color: #e2c8d8;
+    padding-bottom:100px;
+    padding-top: 100px;
+    /* background-color: #fff; */
+    width:100%;
+}
 #section4{
   padding-top:100px;
   width:70%;
-  /* background: #0377fd; */
   margin:0 auto;
+  text-align:center;
 }
 #section4 h1{
   font-size:25pt;
@@ -291,7 +306,36 @@ hr{
   padding    : 10px;
   font-size  : 10pt;
   margin-bottom:150px;
+  box-shadow: 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
 }
 #project_table tr{
   height:40px;
 }
+
+/*연락처----------------------------------*/
+#section5{
+    width:100%;
+    /* background-color: ; */
+    text-align:center;
+    padding-top:300px;
+    padding-bottom:300px;
+}
+#contact_box{
+    padding:50px;
+    width:50%;
+    background-color: white;
+    border-radius: 50px;
+    margin:50px auto;
+}
+#contact_name{
+    font-family: 'GyeonggiBatang';
+    margin:0;
+    font-size: 30pt;
+}
+#short_intro{
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.219rem;
+    color: #3f416567;
+}
+
