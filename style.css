@@ -363,8 +363,8 @@ hr{
 #section5{
     width:100%;
     text-align:center;
-    padding-top:300px;
-    padding-bottom:300px;
+    padding-top:200px;
+    padding-bottom:200px;
     background-color: #557da1;
 }
 #contact_box{
@@ -405,8 +405,4 @@ hr{
   width: 5.625rem;
   height: 5.625rem;
   margin: 20px auto;
-}
-
-#section6{
-
 }
