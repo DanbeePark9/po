@@ -40,6 +40,10 @@
                 var location = document.querySelector("#section5").offsetTop;   
                 window.scrollTo({top:location, behavior:'smooth'});
             });
+            $("#awardsbtn").click(function(event){
+                var location = document.querySelector("#section6").offsetTop;   
+                window.scrollTo({top:location, behavior:'smooth'});
+            });
         });
     </script>
 </head>
@@ -50,7 +54,7 @@
             <li><a href="#news"    id="summarybtn">SUMMARY</a></li>
             <li><a href="#stack"   id="stackbtn">STACK</a></li>
             <li><a href="#project" id="projectbtn">PROJECT</a></li>
-            <!-- <li><a href="#awards"   id="awardsbtn">AWARDS</a></li> -->
+            <li><a href="#awards"   id="awardsbtn">AWARDS</a></li>
             <!-- <li><a href="#about">EDUCATION</a></li> -->
             <!-- <li><a href="#about">DOCUMENT</a></li> -->
             <li><a href="#contact" id="contactbtn">CONTACT</a></li>
@@ -62,11 +66,11 @@
             <tr>
                 <td id="comment">
                     <p>
-                        저는 영어, 일본어, 중국어, 프랑스어 등 다개국어를 능숙하게 구사 할 수 있을 만큼 외국어공부를 진심으로 즐겨했습니다. 2018년 겨울, 문득 외국어를 접목시킬 수 있는 어플이나 웹을 개발하고 싶다는 생각에 Xcode를 다운받아 독학으로 Swift를 배웠고 이런저런 어플 만드는 연습을 했었습니다.
+                        저는 영어, 일본어, 중국어, 프랑스어 등 다개국어를 능숙하게 구사 할 수 있을 만큼 외국어공부를 진심으로 즐겨했습니다. 2018년 겨울, 문득 외국어를 접목시킬 수 있는 어플이나 웹을 개발하고 싶다는 생각에 Xcode를 다운받아 독학으로 Swift를 배웠고 메모장 어플, 프로필 페이지 만들기 등 간단한 어플을 만드는 연습을 했었습니다.
                         <br><br>
-                        하지만 기초적인 지식으로 만든 어플은 시장에 내놓을 수 없었고, 퀄리티 높은 어플과 웹 서비스를 만들고 싶은 욕심이 생기게 되어 더 전문적으로 깊게 배워봐야겠다는 생각을 했습니다. 
+                        하지만 기초적인 지식으로 만든 어플은 시장에 내놓을 수 없었고, 퀄리티 높은 어플과 웹 서비스를 만들고 싶은 욕심이 생기게 되어 더 전문적으로 깊게 배워봐야겠다는 생각을 하게되었습니다. 
                         <br><br>
-                        그렇게 JAVA 앱, 웹개발자 양성 과정에 참여하기로 마음먹고 2019년 5월부터 11월까지 단 한번도 지각이나 결석을 하지 않고 매일 20분씩 일찍 등교하여 학원 동기들과 영어 IT 뉴스 기사를 읽고 자습시간을 활용하여 수업시간에 배웠던 내용을 매일 복습하고 하교했습니다.
+                        그렇게 JAVA 앱, 웹개발자 양성 과정에 참여하기로 마음먹고 2019년 5월부터 11월까지 앱&웹 개발자가 되기 위한 전문적인 개발 지식을 습득했습니다.
                         <br><br>
                         지금은 평생 교육원을 통해 컴퓨터공학 학사 과정을 진행하며 일과 학업을 병행하고 있습니다.
                     </p>    
@@ -237,46 +241,135 @@
         <br>
         <table id="project_table" border="0" cellspacing="0">
             <tr>
-                <td width="25%">프로젝트</td>
-                <td>소개</td>
-                <td width="20%">기간</td>
-                <td width="10%">깃허브</td>
-            </tr>
-            <tr><td colspan="4"><hr id="first_hr"></td></tr>
-            <tr>
-                <td>LG U+ 차세대 프로젝트</td>
-                <td>기존에 사용하던 소스가 노후되어 새로운 공통함수를 개발하는 작업과 팝업을 연계하고 데이터가 잘 전달되는지에 대한 테스트 및 단위테스트, 통합테스트를 맡았습니다.</td>
-                <td>
+                <td width="25%">LG U+ 차세대 프로젝트</td>
+                <td id="td_text_left">
+                    기존에 사용하던 소스가 노후되어 새로운 공통함수를 개발하는 작업과 
+                    팝업을 연계하고 데이터가 잘 전달되는지에 대한 테스트 및 단위테스트, 
+                    통합테스트를 맡았습니다.
+                    <br>
+                    <span>javascript</span>
+                    <span>MySQL</span><span>Orange</span>
+                    <span>MyPlatform</span><span>Websquare</span>
+                </td>
+                <td width="20%">
                     2021.02~
                     2021.00
+                    <br>
+                    <p id="progress_status2">진행중</p>
                 </td>
-                <td>
+                <td width="10%">
                     <i class="fab fa-github-alt" style="color:rgb(187, 187, 187);"></i>
                 </td>
+                <td width="10%">
+                    <img src="play.png" style="opacity: 0.3;" width="30px">
+                </td>
             </tr>
-            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+            <tr><td colspan="5"><hr></td></tr>
             <tr>
                 <td>단비 프랑스어</td>
-                <td>전체적인 값전달 흐름과 xml 설정을 익히고자 혼자서 진행했으며, 불어를 공부하는 사람들이 모여 다양한 의견을 나눌 수있는 프랑스어 커뮤니티입니다. 게시판, 댓글, 단어외우기, 마이페이지에서 CRUD 코딩을 통해 Spring에 대해 이해하려 노력했습니다.</td>
+                <td id="td_text_left">
+                    전체적인 값전달 흐름과 xml 설정을 익히고자 혼자서 진행했으며, 
+                    불어를 공부하는 사람들이 모여 다양한 의견을 나눌 수있는 프랑스어 
+                    커뮤니티입니다. 게시판, 댓글, 단어외우기, 마이페이지에서 CRUD 코딩을
+                     통해 Spring에 대해 이해하려 노력했습니다.
+                     <br>
+                     <span>JAVA</span><span>JSP</span><span>Spring framework</span>
+                    <span>HTML</span><span>javascript</span><span>jQuery</span><span>MyBatis</span>
+                    <span>MySQL</span>
+                </td>
                 <td>
                     2020.10~
                     2020.11
+                    <br>
+                    <p id="progress_status">개발완료</p>
                 </td>
-                <td><a href="https://github.com/DanbeePark9/3rd_project_studyFrench"><i class="fab fa-github-alt"></i></a></td>
+                <td>
+                    <a href="https://github.com/DanbeePark9/3rd_project_studyFrench"><i class="fab fa-github-alt"></i></a>
+                    <br>
+                    
+                </td>
+                <td>
+                    <a href="http://danbilanguage.com/"><img src="play.png" width="30px"></a>
+                </td>
             </tr>
-            <tr id="tr_hr"><td colspan="4"><hr id="section2_hr"></td></tr>
+<tr><td colspan="5"><hr></td></tr>
             <tr>
                 <td>우리동네 동아리</td>
-                <td> MVC2(Servlet, jsp, java)와 Tomcat을 활용해 운동을 가르쳐주고 수익을 낼 수 있는 [우리동네 동아리] 라는 동아리 중개 사이트를 제작했습니다. 평소에 자주 이용했던 [숨고] 에서 자신의 재능으로 수익을 낼 수 있는 구조에서 영감을 받았고 팀원과 합숙을 하며 어떤날은 하루종일 하나의 오류를 밤을 새워가며 해결하기도 하며 많은 성장을 했습니다.</td>
+                <td id="td_text_left"> 
+                    MVC2(Servlet, jsp, java)와 Tomcat을 활용해 운동을 가르쳐주고 
+                    수익을 낼 수 있는 [우리동네 동아리] 라는 동아리 중개 사이트를 제작했습니다.
+                    평소에 자주 이용했던 [숨고] 에서 자신의 재능으로 수익을 낼 수 있는 구조에서
+                    영감을 받았고 팀원과 합숙을 하며 어떤날은 하루종일 하나의 오류를 밤을 새워가며
+                    해결하기도 하며 많은 성장을 했습니다.
+                    <br>
+                    <span>JAVA</span><span>JSP</span><span>Eclipse</span>
+                    <span>HTML</span><span>javascript</span><span>jQuery</span>
+                    <span>Oracle</span>
+                </td>
                 <td>
                     2020.08~
                     2020.09
+                    <br>
+                    <p id="progress_status">개발완료</p>
                 </td>
-                <td><a href="https://github.com/DanbeePark9/2nd_project_dongari_editing"><i class="fab fa-github-alt"></i></a></td>
+                <td>
+                    <a href="https://github.com/DanbeePark9/2nd_project_dongari_editing"><i class="fab fa-github-alt"></i></a>
+                    
+                </td>
+                <td>
+                    <img src="play.png" style="opacity: 0.3;" width="30px">
+                </td>
+            </tr>
+<tr><td colspan="5"><hr></td></tr>
+            <tr>
+                <td>인사이드아웃 채팅 프로그램</td>
+                <td id="td_text_left"> 
+                    Java GUI, socket을 활용한 채팅 프로그램입니다. 
+                    페이지 레이아웃 디자인, 프로젝트 일정 설계, Socket을 활용한 채팅 프로그램 개발 및 전반적인 업무 담당
+                    <br>
+                    <span>JAVA</span><span>Eclipse</span>
+                </td>
+                <td>
+                    2020.08~
+                    2020.09
+                    <br>
+                    <p id="progress_status">개발완료</p>
+                </td>
+                <td><a href="https://github.com/DanbeePark9/portfolio/tree/main/1st_project_chatting"><i class="fab fa-github-alt"></i></a></td>
+                <td>
+                    <img src="play.png" style="opacity: 0.3;" width="30px">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+     <!--프로젝트 사진-->
+        <table id="project_pic_table" border="0" cellspacing="0">
+            <tr>
+                <td>
+                    <img src="insideout.png" height="500px">
+                </td>
+                <td>
+                    <img src="/pic/danbifrench.png" height="500px" alt="">
+                </td>
+            </tr>
+            <tr>
+
             </tr>
         </table>
     </div>
 </div>
+<div id="section6">
+    <div id="section6_content">
+        <h1>AWARDS</h1>
+        <p>JAVA</p>
+        <img src="/pic/awards1.jpg" height="500px" width="100%">
+    </div>
+</div>
+
+
+
     <div id="section5">
         <div id="contact_box">
             <p id="contact_name">PARK DANBEE</p>
