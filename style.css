@@ -458,8 +458,22 @@ hr{
     margin:10px auto;
 
 }
+#contact_table p{
+    margin:0 auto;
+}
 #contact_table tr{
     height:10pt;
+}
+#contact_table a{
+    margin: 10px;
+    padding:5px;
+    background-color: rgb(202, 202, 202);
+    color:white;
+    font-weight: 500;
+    border: 0;
+    padding:10px;
+    border-radius: 5px;
+    text-decoration:none;
 }
 #detail{
     text-align:left;
@@ -471,5 +485,4 @@ hr{
   border-radius: 100%;
   width: 5.625rem;
   height: 5.625rem;
-  margin: 20px auto;
 }
