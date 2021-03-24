@@ -139,13 +139,15 @@ li a:hover:not(.active) {
 #section2{
     text-align : center;
     padding : 100px;
+    
+    /* background-color: #fff; */
 }
 
 #stack_title{
     font-family: 'Y_Spotlight';
     color      : #fffeff;
     font-size  : 2em;
-    width      : 50%;
+    width      : 90%;
     margin     : 50px auto 0px;
     padding    : 10px 50px;
     box-shadow : 5px 5px 5px 5px rgba(100, 100, 100, 0.1);
@@ -160,7 +162,7 @@ li a:hover:not(.active) {
     padding    : 10px;
     padding-bottom:30px;
     font-size  : 10pt;
-    width      : 80%;
+    width      : 100%;
     margin     : 0 auto;
     color      :rgb(97, 97, 97);
     background: white;
@@ -171,7 +173,7 @@ li a:hover:not(.active) {
   padding    : 10px;
   padding-bottom:30px;
   font-size  : 10pt;
-  width      : 80%;
+  width      : 100%;
   margin     : 50px auto;
   color      :rgb(97, 97, 97);
   background: white;
@@ -182,7 +184,7 @@ li a:hover:not(.active) {
   padding    : 10px;
   padding-bottom:30px;
   font-size  : 10pt;
-  width      : 80%;
+  width      : 100%;
   margin     : 50px auto;
   color      :rgb(97, 97, 97);
   background: white;
